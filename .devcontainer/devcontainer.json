@@ -33,13 +33,21 @@
   // "forwardPorts": [],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": [
-    "make install",
-    "go version",
-    "minikube version",
-    "kubectl version",
-    "kind create cluster"
-  ]
+  // "postCreateCommand": [
+  //   "make install",
+  //   "go version",
+  //   "kind create cluster",
+  //   "kubectl version",
+  //   "kubectl get nodes"
+  // ],
+
+  "postCreateCommand": "/bin/bash post-install.sh"
+
+  // "postStartCommand": [
+  //   "go version",
+  //   "kubectl version --client",
+  //   "kind version"
+  // ]
 
   // Configure tool-specific properties.
   // "customizations": {},
