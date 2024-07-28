@@ -41,7 +41,7 @@
   //   "kubectl get nodes"
   // ],
 
-  "postCreateCommand": "/bin/bash post-install.sh"
+  "postCreateCommand": "./post-install.sh"
 
   // "postStartCommand": [
   //   "go version",
