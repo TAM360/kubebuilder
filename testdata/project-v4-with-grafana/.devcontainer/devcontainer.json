@@ -1,12 +1,11 @@
 {
   "name": "Kubebuilder DevContainer",
-  "image": "golang:1.22-bullseye",
+  "image": "golang:1.22",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "ghcr.io/devcontainers/features/git:1": {}
   },
 
-  // Required for running Kind inside DevContainer
   "runArgs": ["--network=host"],
 
   "customizations": {
