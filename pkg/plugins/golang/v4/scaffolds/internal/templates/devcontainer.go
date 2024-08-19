@@ -63,6 +63,8 @@ curl -LO "https://dl.k8s.io/release/$KUBECTL_VERSION/bin/linux/amd64/kubectl"
 chmod +x kubectl
 mv kubectl /usr/local/bin/kubectl
 
+docker network create -d=bridge --subnet=172.19.0.0/24 kind
+
 kind version
 kubebuilder version
 docker --version
